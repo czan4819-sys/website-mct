@@ -58,7 +58,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="mailto:ptmumtazcyberteknologi.com" className="hover:text-white transition">
+                <a href="mailto:ptmumtazcyberteknologi@gmail.com" className="hover:text-white transition">
                   Dukungan Email
                 </a>
               </li>
