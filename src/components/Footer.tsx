@@ -1,7 +1,11 @@
+"use client";
+
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
 
   return (
     <footer className="bg-gray-900 dark:bg-black text-white mt-16">
@@ -69,9 +73,21 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Hukum</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <a href="#" className="hover:text-white transition">
-                  Kebijakan Privasi
-                </a>
+                <button
+                  onClick={() => setShowPrivacyPolicy(!showPrivacyPolicy)}
+                  className="hover:text-white transition text-left w-full"
+                >
+                  Kebijakan Privasi {showPrivacyPolicy ? '▼' : '▶'}
+                </button>
+                {showPrivacyPolicy && (
+                  <div className="mt-2 text-gray-300 text-xs bg-gray-800 p-3 rounded">
+                    <strong>1. Kebijakan Privasi (Privacy Policy)</strong><br />
+                    Terakhir Diperbarui: 26 Maret 2026<br />
+                    Selamat datang di PT Mumtaz Cyber Teknologi. Kami sangat menghargai privasi Anda dan berkomitmen untuk melindungi data pribadi pelanggan kami sesuai dengan peraturan perundang-undangan yang berlaku di Indonesia.<br />
+                    <strong>1. Informasi yang Kami Kumpulkan</strong><br />
+                    Kami mengumpulkan informasi identitas pribadi (seperti nama, alamat instalasi, nomor KTP/NIK, email, dan nomor telepon) serta informasi teknis terkait penggunaan layanan internet Anda (seperti alamat IP dan penggunaan bandwidth) untuk keperluan operasional.
+                  </div>
+                )}
               </li>
               <li>
                 <a href="#" className="hover:text-white transition">

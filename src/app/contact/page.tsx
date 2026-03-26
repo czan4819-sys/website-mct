@@ -52,9 +52,9 @@ export default function Contact() {
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
                   📧 Email
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 break-words">
-                  <a href="mailto:mumtazcyberteknologi@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 block">
-                    mumtazcyberteknologi@gmail.com
+                <p className="text-gray-600 dark:text-gray-400 wrap-break-words">
+                  <a href="mailto:ptmumtazcyberteknologi@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 block">
+                    ptmumtazcyberteknologi@gmail.com
                   </a>
                 </p>
               </div>
