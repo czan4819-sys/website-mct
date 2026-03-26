@@ -35,10 +35,10 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-6">
-          Get In Touch
+          Hubungi Kami
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl">
-          Have questions? We would love to hear from you. Send us a message and we will respond as soon as possible.
+          Ada pertanyaan? Kami ingin mendengar dari Anda. Kirimkan pesan kepada kami dan kami akan merespons sesegera mungkin.
         </p>
       </section>
 
@@ -65,21 +65,32 @@ export default function Contact() {
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400">
                   <a href="tel:+1234567890" className="hover:text-blue-600 dark:hover:text-blue-400">
-                    +6289603528824
+                    089603528824
                   </a>
                 </p>
               </div>
 
               <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
-                  📍 Address
+                  📍 Alamat
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  96123 JL brigjend piola isa<br />
-                  dulomo selatan, kota gorontalo<br />
-                  indonesia
-                
+                  96123 JL Brigjend Piola Isa<br />
+                  Dulomo Selatan, Kota Gorontalo<br />
+                  Indonesia
                 </p>
+                <div className="mt-6 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700">
+                  <iframe
+                    title="Lokasi Perusahaan"
+                    width="100%"
+                    height="400"
+                    loading="lazy"
+                    allowFullScreen
+                    referrerPolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2713.481373141124!2d123.08005417659243!3d0.5717758404200858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x327ed35525172179%3A0xa5da5bfdc46d353e!2sDulomo%20Sel.%2C%20Kec.%20Kota%20Utara%2C%20Kota%20Gorontalo%2C%20Gorontalo!5e0!3m2!1sid!2sid!4v1774496910006!5m2!1sid!2sid"
+                    className="w-full h-full border-0"
+                  ></iframe>
+                </div>
               </div>
             </div>
 
@@ -89,7 +100,7 @@ export default function Contact() {
                 <form onSubmit={handleSubmit}>
                   <div className="mb-6">
                     <label className="block text-gray-900 dark:text-white font-semibold mb-2">
-                      Name
+                      Nama
                     </label>
                     <input
                       type="text"
@@ -98,7 +109,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      placeholder="Your name"
+                      placeholder="Nama Anda"
                     />
                   </div>
 
@@ -113,13 +124,13 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      placeholder="your@email.com"
+                      placeholder="email@anda.com"
                     />
                   </div>
 
                   <div className="mb-6">
                     <label className="block text-gray-900 dark:text-white font-semibold mb-2">
-                      Company
+                      Perusahaan
                     </label>
                     <input
                       type="text"
@@ -127,13 +138,13 @@ export default function Contact() {
                       value={formData.company}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      placeholder="Your company"
+                      placeholder="Perusahaan Anda"
                     />
                   </div>
 
                   <div className="mb-6">
                     <label className="block text-gray-900 dark:text-white font-semibold mb-2">
-                      Message
+                      Pesan
                     </label>
                     <textarea
                       name="message"
@@ -142,7 +153,7 @@ export default function Contact() {
                       required
                       rows={5}
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      placeholder="Your message..."
+                      placeholder="Pesan Anda..."
                     ></textarea>
                   </div>
 
@@ -150,12 +161,12 @@ export default function Contact() {
                     type="submit"
                     className="w-full bg-blue-600 dark:bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 dark:hover:bg-blue-600 transition"
                   >
-                    Send Message
+                    Kirim Pesan
                   </button>
 
                   {submitted && (
                     <div className="mt-4 p-4 bg-green-100 dark:bg-green-900/30 border border-green-400 dark:border-green-700 text-green-700 dark:text-green-400 rounded-lg">
-                      Thank you for your message! We will get back to you soon.
+                      Terima kasih atas pesan Anda! Kami akan menghubungi Anda segera.
                     </div>
                   )}
                 </form>
@@ -168,27 +179,27 @@ export default function Contact() {
       {/* Service Hours */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <h2 className="text-4xl font-bold text-gray-900 dark:text-white text-center mb-12">
-          Business Hours
+          Jam Kerja
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
           <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg text-center">
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-              💼 Normal Hours
+              💼 Jam Normal
             </h3>
             <p className="text-gray-600 dark:text-gray-400">
-              Monday - Friday: 9:00 AM - 6:00 PM<br />
-              Saturday: 10:00 AM - 4:00 PM<br />
-              Sunday: Closed
+              Senin - Jumat: 09:00 - 18:00<br />
+              Sabtu: 10:00 - 16:00<br />
+              Minggu: Tutup
             </p>
           </div>
           <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg text-center">
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-              🆘 Emergency Support
+              🆘 Dukungan Darurat
             </h3>
             <p className="text-gray-600 dark:text-gray-400">
-              Available 24/7 for premium customers<br />
-              Call: +1 (234) 567-891<br />
-              Email: support@mycompany.com
+              Tersedia 24/7 untuk pelanggan premium<br />
+              Panggilan: 089603528824<br />
+              Email: Fauzanhamdata671@gmail.com
             </p>
           </div>
         </div>

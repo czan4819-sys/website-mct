@@ -11,32 +11,32 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold text-blue-400 mb-4">PT MUMTAZ CYBER TEKNOLOGI</h3>
             <p className="text-gray-400 text-sm">
-              Building innovative solutions for modern businesses.
+              Membangun solusi inovatif untuk bisnis modern.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-semibold mb-4">Tautan Cepat</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
                 <Link href="/" className="hover:text-white transition">
-                  Home
+                  Beranda
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="hover:text-white transition">
-                  Services
+                  Layanan
                 </Link>
               </li>
               <li>
                 <Link href="/about" className="hover:text-white transition">
-                  About
+                  Tentang Kami
                 </Link>
               </li>
               <li>
                 <Link href="/pricing" className="hover:text-white transition">
-                  Pricing
+                  Harga
                 </Link>
               </li>
             </ul>
@@ -44,21 +44,21 @@ export default function Footer() {
 
           {/* Support */}
           <div>
-            <h4 className="font-semibold mb-4">Support</h4>
+            <h4 className="font-semibold mb-4">Dukungan</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
                 <Link href="/contact" className="hover:text-white transition">
-                  Contact Us
+                  Hubungi Kami
                 </Link>
               </li>
               <li>
                 <a href="mailto:support@mycompany.com" className="hover:text-white transition">
-                  Email Support
+                  Dukungan Email
                 </a>
               </li>
               <li>
                 <a href="tel:+1234567890" className="hover:text-white transition">
-                  Call Us
+                  Hubungi Kami
                 </a>
               </li>
             </ul>
@@ -66,21 +66,21 @@ export default function Footer() {
 
           {/* Legal */}
           <div>
-            <h4 className="font-semibold mb-4">Legal</h4>
+            <h4 className="font-semibold mb-4">Hukum</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
                 <a href="#" className="hover:text-white transition">
-                  Privacy Policy
+                  Kebijakan Privasi
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition">
-                  Terms of Service
+                  Syarat Layanan
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition">
-                  Cookie Policy
+                  Kebijakan Cookie
                 </a>
               </li>
             </ul>
@@ -90,7 +90,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-gray-800 pt-8">
           <p className="text-gray-400 text-sm text-center">
-            &copy; {currentYear} MyCompany. All rights reserved.
+            &copy; {currentYear} PT MUMTAZ CYBER TEKNOLOGI. Semua hak dilindungi.
           </p>
         </div>
       </div>

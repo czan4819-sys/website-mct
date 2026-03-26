@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PT MUMTAZ CYBER TEKNOLOGI - Professional internet service Solutions",
-  description: "Providing top-quality internet service solutions for businesses and individuals.",
+  title: "PT MUMTAZ CYBER TEKNOLOGI - Solusi Layanan Internet Profesional",
+  description: "Menyediakan solusi layanan internet berkualitas tinggi untuk bisnis dan perorangan.",
 };
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="id"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white dark:bg-black">

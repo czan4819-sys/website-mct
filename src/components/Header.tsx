@@ -16,19 +16,19 @@ export default function Header() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-8">
           <Link href="/" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">
-            Home
+            Beranda
           </Link>
           <Link href="/services" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">
-            Services
+            Layanan
           </Link>
           <Link href="/about" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">
-            About
+            Tentang Kami
           </Link>
           <Link href="/pricing" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">
-            Pricing
+            Harga
           </Link>
           <Link href="/contact" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">
-            Contact
+            Kontak
           </Link>
         </div>
 
@@ -48,19 +48,19 @@ export default function Header() {
         <div className="md:hidden bg-white dark:bg-black border-t border-gray-200 dark:border-gray-800">
           <div className="flex flex-col gap-4 px-4 py-4">
             <Link href="/" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
-              Home
+              Beranda
             </Link>
             <Link href="/services" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
-              Services
+              Layanan
             </Link>
             <Link href="/about" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
-              About
+              Tentang Kami
             </Link>
             <Link href="/pricing" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
-              Pricing
+              Harga
             </Link>
             <Link href="/contact" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
-              Contact
+              Kontak
             </Link>
           </div>
         </div>
