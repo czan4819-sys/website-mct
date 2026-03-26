@@ -58,12 +58,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="mailto:support@mycompany.com" className="hover:text-white transition">
+                <a href="mailto:ptmumtazcyberteknologi.com" className="hover:text-white transition">
                   Dukungan Email
                 </a>
               </li>
               <li>
-                <a href="tel:+1234567890" className="hover:text-white transition">
+                <a href="tel:089603528824" className="hover:text-white transition">
                   Hubungi Kami
                 </a>
               </li>
