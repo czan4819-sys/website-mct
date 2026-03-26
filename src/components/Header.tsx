@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,8 +10,20 @@ export default function Header() {
   return (
     <header className="bg-white dark:bg-black shadow-md sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-          PT MUMTAZ CYBER TEKNOLOGI
+        
+        {/* LOGO + NAMA */}
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/logo.png"
+            alt="Logo PT Mumtaz Cyber Teknologi"
+            width={80}
+            height={80
+            }
+            className="object-contain rounded-full transition-transform hover:scale-110"
+          />
+          <span className="text-lg sm:text-xl font-bold text-blue-600 dark:text-blue-400">
+            PT MUMTAZ CYBER TEKNOLOGI
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
